@@ -6,10 +6,10 @@ Cylon.robot({
   },
 
   devices: {
-    led: { driver: 'led', pin: 11 }
+    led: { driver: 'led', pin: 11 },
   },
 
-  work: function(my) {
-    every((1).second(), my.led.toggle);
+  work: function (pi) {
+    every((1).second(), pi.led.toggle);
   }
 }).start();
